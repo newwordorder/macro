@@ -1,0 +1,63 @@
+.tabby {
+    background: $secondary;
+    
+
+    a {
+        color: $white;
+        padding: 1.5rem;
+        
+        border-radius: 0!important;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        line-height: 0.875rem;
+        font-weight:700;
+        height: 100%;
+
+        &:hover {
+            background: darken($secondary, 10%);
+        }
+
+        &.active {
+            background-color: darken($secondary, 10%)!important;
+            position: relative;
+
+            &:after {
+                content:"";
+                position: absolute;
+                height: 16px;
+                width:16px;
+                background: darken($secondary, 10%);
+                bottom: -8px;
+                left: 50%;
+                transform: translateX(-50%) rotate(45deg);
+            }
+        }
+    }
+}
+
+
+.tab-pane {
+    height:0;
+    margin-top: -30px;
+
+    @include media-breakpoint-down(md) {
+        margin-top:0px!important
+      }
+
+    &.show {
+        height: 100%;
+    }
+}
+
+.tabby-container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0!important;
+    margin-top:-2rem!important;
+
+    @include media-breakpoint-down(md) {
+        margin-top:0px!important;
+        background: $secondary;
+      }
+}

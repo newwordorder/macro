@@ -1,6 +1,6 @@
-$font-serif: 'Frank Ruhl Libre',
+$font-heading: 'Oswald', sans-serif,
 serif;
-$font-sans: 'Montserrat',
+$font-body: 'Montserrat',
 sans-serif;
 
 
@@ -19,7 +19,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: $font-sans;
+  font-family: $font-body;
 }
 
 h1,
@@ -36,20 +36,21 @@ h6,
 .h6 {
   margin-bottom: 1rem;
   color: $heading-color;
-  font-family: $font-sans;
-  font-weight: 700;
+  font-family: $font-heading;
+  text-transform: uppercase;
 }
 
 h6,
 .h6 {
-  font-family: $font-sans;
-  
+  font-family: $font-body;
+  font-weight: 700;
+  color: $primary;
   text-transform: uppercase;
 }
 
 p {
   color: $body-color;
-  font-family: $font-sans;
+  font-family: $font-body;
 }
 
 .lead {
@@ -78,7 +79,7 @@ p:last-of-type {
 
 ul,
 ol {
-  font-family: $font-sans;
+  font-family: $font-body;
 }
 
 hr {

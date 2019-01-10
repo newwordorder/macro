@@ -10,8 +10,8 @@ if( function_exists('acf_add_options_page') ) {
 	));
 	
 	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Pre-footer call to action',
-		'menu_title'	=> 'Pre-footer CTA',
+		'page_title' 	=> 'Connect tab',
+		'menu_title'	=> 'Connect tab',
 		'parent_slug'	=> 'theme-general-settings',
 	));
 	

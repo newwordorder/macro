@@ -19,13 +19,14 @@ $backgroundImage = get_field('background_image');
 
 $image = $backgroundImage['background_image'];
 $backgroundEffect = $backgroundImage['background_effect'];
+$imageOverlay = $backgroundImage['image_overlay'];
 
 $introText = get_field('intro_text');
 $hidePageTitle = get_field('hide_page_title');
 
 ?>
 
-<section id="sub-header" class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>" data-overlay="5">
+<section id="sub-header" class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>" data-overlay="<?php echo $imageOverlay ?>">
 
 
   <?php if( !empty($image) ):
@@ -40,10 +41,10 @@ $hidePageTitle = get_field('hide_page_title');
     </div>
   <?php endif; ?>
 
-<div class="container">
+<div class="container-wide">
   <div class="row justify-content-center">
-    <div class="col-md-10">
-        <h1 class="page-title"><?php the_title(); ?></h1>
+    <div class="col">
+        <h1 class=""><?php the_title(); ?></h1>
     </div>
   </div>
 </div>
@@ -53,5 +54,4 @@ $hidePageTitle = get_field('hide_page_title');
 </section>
 
 <?php get_template_part( 'page-templates/blocks' ); ?>
-<?php get_template_part( 'page-templates/blocks/pre-footer-cta' ); ?>
 <?php get_footer();

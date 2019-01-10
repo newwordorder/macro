@@ -20,7 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Montserrat:500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Montserrat:500,700" rel="stylesheet">
 	<?php wp_head(); ?>
 
 </head>
@@ -32,63 +32,49 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 <div id="header" class="header" >
 
-		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+	<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-			<div class="header__inner" >
-					<div class="d-flex align-items-center w-100">
-					
-					<div class="col-md-3">
-									<a href="<?php echo get_home_url(); ?>" id="site-logo" class="header__logo">
+	<span class="menu-toggle">Menu</span>
+	<span class="connect-toggle">Connect</span>
+		
+		<!-- <a href="<?php echo get_home_url(); ?>" id="site-logo" class="site-logo">
+			<img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/mg-logo.svg" alt="The Macro Group">
+		</a> -->
+	<a id="toggleMenu" class="toggle-menu">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+	</a>
 
-										<img class="logo logo--white" src="<?php bloginfo('template_directory'); ?>/img/logo--white.svg" alt="Langs Building Supplies">
-										<img class="logo logo--black" src="<?php bloginfo('template_directory'); ?>/img/logo--black.svg" alt="Langs Building Supplies">
-
-									</a>
-					</div>
-					<a id="toggleMenu" class="toggle-menu">
-							<span class="line"></span>
-							<span class="line"></span>
-							<span class="line"></span>
-					</a>
-
-<div class="col">
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'header',
-						'container_class' => 'header-nav header-nav__right',
-						'container_id'    => '',
-						'menu_class'      => 'menu',
-						'fallback_cb'     => '',
-						'menu_id'         => 'header__right',
-						'walker'          => new understrap_WP_Bootstrap_Navwalker(),
-					)
-				); ?>
-</div>
-				
-				</div>
-			</div><!-- .container -->
-
+	
+		
 	</div><!-- #header -->
+
+
+
+<div class="menu-container">
+	<span class="menu-close"><i class="fal fa-times"></i></span>
 	<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'mobile',
-						'container_class' => 'header-nav header-nav__mobile',
-						'container_id'    => 'mobileNav',
-						'menu_class'      => 'menu',
-						'fallback_cb'     => '',
-						'menu_id'         => 'header__mobile',
-						'walker'          => new understrap_WP_Bootstrap_Navwalker(),
-					)
-				); ?>
+		array(
+			'theme_location'  => 'main',
+			'container_class' => 'main-menu__container',
+			'container_id'    => '',
+			'menu_class'      => 'main-menu',
+			'fallback_cb'     => '',
+			'menu_id'         => 'main-menu',
+		)
+	); ?>
+	<?php wp_nav_menu(
+		array(
+			'theme_location'  => 'main-buttons',
+			'container_class' => 'main-menu__container',
+			'container_id'    => '',
+			'menu_class'      => 'main-menu-buttons',
+			'fallback_cb'     => '',
+			'menu_id'         => 'main-menu-buttons',
+		)
+	); ?>
+</div>
 
-<script>
 
-(function($) {
-		$(".toggle-menu").click(function () {
-			$(".toggle-menu,.header-nav").toggleClass("is-active");
-	});
-})( jQuery );
-</script>
-
-
-	<div class="page">
+<div id="content" class="page">

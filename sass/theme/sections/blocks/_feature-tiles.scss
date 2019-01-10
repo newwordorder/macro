@@ -1,6 +1,9 @@
+.feature-tiles {
+  padding: 2px;
+}
 .feature-tile {
   position: relative;
-  margin: 6px 0;
+  margin: 2px 0;
 
   * {
     color: $white;
@@ -12,7 +15,7 @@
   }
 
   &--landscape {
-    padding-bottom: 56.25%;
+    padding-bottom: 70%;
     height: 0;
   }
 
@@ -23,10 +26,21 @@
 
   &__content {
     position: absolute;
-    bottom: 0px;
-    left: 16px;
+    bottom: 1rem;
+    right: 2.5rem;
     z-index: 3;
+    transform: rotate(90deg);
+    transform-origin: bottom right;
   }
+
+  &__text {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25rem;
+    
+  }
+
   &:hover .background-image-holder {
     transform: scale(1.1);
   }

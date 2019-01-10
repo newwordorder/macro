@@ -8,13 +8,16 @@ body {
   background: $dark;
 }
 
-.page {
-  background: $white;
-}
-
 .container {
   padding-right: 1rem;
   padding-left: 1rem;
+
+}
+
+.container-wide {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 
 }
 
@@ -76,8 +79,8 @@ section {
     &--ken-burns {
       overflow: hidden;
 
-      &>.background-image-holder,
-      &>img:only-child {
+      & .background-image-holder,
+      & img:only-child {
         animation: kenBurns 15s ease alternate infinite;
         -webkit-animation: kenBurns 15s ease alternate infinite;
       }
@@ -164,11 +167,11 @@ section {
 .btn {
   font-size: 0.825em;
   font-weight: 700;
-  font-family: $font-sans;
+  font-family: $font-body;
   text-transform: uppercase;
   color: $primary;
   padding: 0.8em 1.6em;
-  border-radius: 3px;
+  border-radius: 0px;
 
   &--solid {
     background: $primary;
@@ -224,7 +227,7 @@ section {
   color: $primary;
   font-size: 0.825em;
   font-weight: 700;
-  font-family: $font-sans;
+  font-family: $font-body;
   text-transform: uppercase;
 
   &:hover {
@@ -257,16 +260,13 @@ section {
 
   &--home {
     padding: 200px 0 150px;
+    height: 80vh;
     position: relative;
   }
 
   &--page {
     padding: 200px 0 100px;
-    position: relative;
-  }
-
-  &--sub-page {
-    padding: 150px 0 80px;
+    height: 50vh;
     position: relative;
   }
 
@@ -496,7 +496,7 @@ section {
     color: $primary;
     font-size: 0.825em;
     font-weight: 700;
-    font-family: $font-sans;
+    font-family: $font-body;
     text-transform: uppercase;
     margin: 0 0.5rem;
 
@@ -515,4 +515,20 @@ section {
 
 
 
+}
+
+.swiper-wrapper {
+  position: relative;
+  top: 0;
+  height: 100%;
+}
+
+.acf-map {
+	width: 100%;
+	height: 100%;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+   max-width: inherit !important;
 }

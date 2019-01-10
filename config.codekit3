@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
 	"/404.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -192,6 +199,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/img/mg-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/mg-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/mg-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/mg-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/inc/acf-options.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -255,11 +282,11 @@
 		"oAP": "/inc/jetpack.php",
 		"oF": 0
 		},
-	"/inc/loadmore.php": {
+	"/inc/map.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/inc/loadmore.php",
+		"oAP": "/inc/map.php",
 		"oF": 0
 		},
 	"/inc/pagination.php": {
@@ -348,32 +375,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/countdown.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/countdown.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/customizer.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/customizer-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/datepicker.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/datepicker-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -408,36 +415,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/header-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/header-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/header.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/header-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/isotope.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/isotope.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/jquery-3.1.1.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -448,32 +425,22 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/jquery.steps.min.js": {
+	"/js/map-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/jquery.steps.min-min.js",
+		"oAP": "/js/map-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/lightbox.min.js": {
+	"/js/map.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/lightbox.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/loadmore.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/loadmore-min.js",
+		"oAP": "/js/map-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -548,12 +515,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/spectragram.min.js": {
+	"/js/swiper.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/spectragram.min-min.js",
+		"oAP": "/js/swiper-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -564,26 +531,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/theme-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/typed.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/typed.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/ytplayer.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/ytplayer.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1002,13 +949,6 @@
 		"oAP": "/page-templates/page.php",
 		"oF": 0
 		},
-	"/page-templates/sub-page.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/page-templates/sub-page.php",
-		"oF": 0
-		},
 	"/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1102,6 +1042,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/sass/assets/bootstrap4.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/assets/swiper.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/assets/swiper.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2523,6 +2476,16 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/style.css": {
 		"aP": 1,

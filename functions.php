@@ -71,12 +71,13 @@ require get_template_directory() . '/inc/woocommerce.php';
 require get_template_directory() . '/inc/editor.php';
 
 /**
- * Load more button.
- */
-require get_template_directory() . '/inc/loadmore.php';
-
-/**
  * ACF options pages.
  */
 require get_template_directory() . '/inc/acf-options.php';
+
+/**
+ * ACF map.
+ */
+require get_template_directory() . '/inc/map.php';
+
 

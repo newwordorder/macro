@@ -41,8 +41,8 @@ if ( ! function_exists( 'understrap_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'header' => __( 'Header', 'understrap' ),
-			'mobile' => __( 'Mobile', 'understrap' ),
+			'main' => __( 'Main menu', 'understrap' ),
+			'main-buttons' => __( 'Main menu buttons', 'understrap' ),
 			'footer-social' => __( 'Footer social', 'understrap' ),
 		) );
 
@@ -82,17 +82,7 @@ if ( ! function_exists( 'understrap_setup' ) ) :
 		 */
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
-		/*
-		 * Enable support for Post Formats.
-		 * See http://codex.wordpress.org/Post_Formats
-		 */
-		add_theme_support( 'post-formats', array(
-			'aside',
-			'image',
-			'video',
-			'quote',
-			'link',
-		) );
+		
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'understrap_custom_background_args', array(

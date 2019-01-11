@@ -1,4 +1,4 @@
-!function(t){
+!function(r){
 /*
     *  new_map
     *
@@ -11,17 +11,17 @@
     *  @param	$el (jQuery element)
     *  @return	n/a
     */
-function n(n){
+function e(e){
 // var
-var e=n.find(".marker"),a={zoom:16,center:new google.maps.LatLng(0,0),mapTypeId:google.maps.MapTypeId.ROADMAP},o=new google.maps.Map(n[0],a);
+var t=e.find(".marker"),l={zoom:16,center:new google.maps.LatLng(0,0),mapTypeId:google.maps.MapTypeId.ROADMAP,disableDefaultUI:!0,styles:[{featureType:"all",elementType:"labels.text.fill",stylers:[{saturation:36},{color:"#000000"},{lightness:40}]},{featureType:"all",elementType:"labels.text.stroke",stylers:[{visibility:"on"},{color:"#000000"},{lightness:16}]},{featureType:"all",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"administrative",elementType:"geometry.fill",stylers:[{color:"#000000"},{lightness:20}]},{featureType:"administrative",elementType:"geometry.stroke",stylers:[{color:"#000000"},{lightness:17},{weight:1.2}]},{featureType:"landscape",elementType:"geometry",stylers:[{color:"#000000"},{lightness:20}]},{featureType:"poi",elementType:"geometry",stylers:[{color:"#000000"},{lightness:21}]},{featureType:"road.highway",elementType:"geometry.fill",stylers:[{color:"#000000"},{lightness:17}]},{featureType:"road.highway",elementType:"geometry.stroke",stylers:[{color:"#000000"},{lightness:29},{weight:.2}]},{featureType:"road.arterial",elementType:"geometry",stylers:[{color:"#000000"},{lightness:18}]},{featureType:"road.local",elementType:"geometry",stylers:[{color:"#000000"},{lightness:16}]},{featureType:"transit",elementType:"geometry",stylers:[{color:"#000000"},{lightness:19}]},{featureType:"water",elementType:"geometry",stylers:[{color:"#000000"},{lightness:17}]}]},o=new google.maps.Map(e[0],l);
 // vars
 // return
 // add a markers reference
 return o.markers=[],
 // add markers
-e.each(function(){r(t(this),o)}),
+t.each(function(){s(r(this),o)}),
 // center map
-g(o),o}
+a(o),o}
 /*
     *  add_marker
     *
@@ -34,18 +34,18 @@ g(o),o}
     *  @param	$marker (jQuery element)
     *  @param	map (Google Map object)
     *  @return	n/a
-    */function r(n,e){
+    */function s(e,t){
 // var
-var a=new google.maps.LatLng(n.attr("data-lat"),n.attr("data-lng")),o=new google.maps.Marker({position:a,map:e});
+var l=new google.maps.LatLng(e.attr("data-lat"),e.attr("data-lng")),o=new google.maps.Marker({position:l,map:t});
 // create marker
 // if marker contains HTML, add it to an infoWindow
 if(
 // add to array
-e.markers.push(o),n.html()){
+t.markers.push(o),e.html()){
 // create info window
-var t=new google.maps.InfoWindow({content:n.html()});
+var r=new google.maps.InfoWindow({content:e.html()});
 // show info window when marker is clicked
-google.maps.event.addListener(o,"click",function(){t.open(e,o)})}}
+google.maps.event.addListener(o,"click",function(){r.open(t,o)})}}
 /*
     *  center_map
     *
@@ -57,17 +57,17 @@ google.maps.event.addListener(o,"click",function(){t.open(e,o)})}}
     *
     *  @param	map (Google Map object)
     *  @return	n/a
-    */function g(n){
+    */function a(e){
 // vars
 var o=new google.maps.LatLngBounds;
 // loop through all markers and create bounds
-t.each(n.markers,function(n,e){var a=new google.maps.LatLng(e.position.lat(),e.position.lng());o.extend(a)}),
+r.each(e.markers,function(e,t){var l=new google.maps.LatLng(t.position.lat(),t.position.lng());o.extend(l)}),
 // only 1 marker?
-1==n.markers.length?(
+1==e.markers.length?(
 // set center of map
-n.setCenter(o.getCenter()),n.setZoom(16)):
+e.setCenter(o.getCenter()),e.setZoom(16)):
 // fit to bounds
-n.fitBounds(o)}
+e.fitBounds(o)}
 /*
     *  document ready
     *
@@ -81,6 +81,6 @@ n.fitBounds(o)}
     *  @return	n/a
     */
 // global var
-var e=null;t(document).ready(function(){t(".acf-map").each(function(){
+var t=null;r(document).ready(function(){r(".acf-map").each(function(){
 // create map
-e=n(t(this))})})}(jQuery);
+t=e(r(this))})})}(jQuery);

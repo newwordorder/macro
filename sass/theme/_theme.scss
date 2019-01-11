@@ -36,9 +36,6 @@ section {
     &--dark {
       background-color: $dark;
 
-      * {
-        color: #fff;
-      }
     }
 
     &--primary {
@@ -172,6 +169,10 @@ section {
   color: $primary;
   padding: 0.8em 1.6em;
   border-radius: 0px;
+
+  &--block {
+    display: block;
+  }
 
   &--solid {
     background: $primary;
@@ -464,25 +465,6 @@ section {
 }
 
 
-//
-// Sizing
-//
-
-.pagination-lg {
-  @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
-}
-
-.pagination-sm {
-  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
-}
-
-
-.form-control {
-  border-radius: 0px !important;
-  border: 2px solid #000 !important;
-}
-
-
 .blog-categories {
   margin: 0;
   padding: 0;
@@ -532,3 +514,42 @@ section {
 .acf-map img {
    max-width: inherit !important;
 }
+
+.marker {
+  padding: 1rem;
+  background-color: $white;
+  color: $dark;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+.site-logo {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 200px;
+  z-index: 1000!important;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.title {
+  position: absolute!important;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+
+.feature-tiles {
+  .col-md-4, .col-md-3, .col-md-6 {
+    padding: 0 2px;
+  }
+ }
+
+ .contact-info {
+   font-size: 0.875rem;
+ }

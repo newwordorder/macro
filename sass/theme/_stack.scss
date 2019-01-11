@@ -3232,7 +3232,7 @@ a {
 }
 
 .bg--dark {
-  background: #252525;
+  background: #000;
 }
 
 .bg--dark:not(.nav-bar):not(.bar) {
@@ -3251,7 +3251,7 @@ a {
   color: #ffffff;
 }
 
-.bg--dark:not(.nav-bar):not(.bar) a:not(.btn) {
+.bg--dark:not(.nav-bar):not(.bar) a:not(.btn), .bg--dark:not(.nav-bar):not(.bar) a:not(.social-link) {
   color: #fff;
 }
 
@@ -5441,7 +5441,7 @@ section.bg-effect--parallax .row .background-image-holder {
 }
 
 .section--ken-burns>.background-image-holder,
-.section--ken-burns>img:only-child {
+.section--ken-burns>img:only-child:not(.site-logo) {
   animation: kenBurns 15s ease alternate infinite;
   -webkit-animation: kenBurns 15s ease alternate infinite;
 }

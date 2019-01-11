@@ -16,6 +16,7 @@ if( have_rows('blocks') ) {
       while ( have_rows('section') ) { the_row();
 
          get_template_part( 'page-templates/blocks/text-block' );
+         get_template_part( 'page-templates/blocks/text-columns' );
          get_template_part( 'page-templates/blocks/50-50' );
          get_template_part( 'page-templates/blocks/text-image' );
          get_template_part( 'page-templates/blocks/cta' );
@@ -23,11 +24,11 @@ if( have_rows('blocks') ) {
          get_template_part( 'page-templates/blocks/video' );
          get_template_part( 'page-templates/blocks/feature-columns' );
          get_template_part( 'page-templates/blocks/feature-tiles' );
+         get_template_part( 'page-templates/blocks/feature-tile-text' );
          get_template_part( 'page-templates/blocks/line-break' );
-         get_template_part( 'page-templates/blocks/projects' );
          get_template_part( 'page-templates/blocks/blog' );
          get_template_part( 'page-templates/blocks/client-logos' );
-         get_template_part( 'page-templates/blocks/tabs' );
+         get_template_part( 'page-templates/blocks/contact' );
 
       }
 

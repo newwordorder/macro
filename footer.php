@@ -16,12 +16,13 @@
 		<div class="container-wide">
 
 				<div class="row align-items-center">
-						<div class="col-sm-10">
-								<p>Copyright © 2018 The Macro Group | LIMITED AFSL: 485843 | DISCLAIMER | 
-								 <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy Policy</a></p>
+						<div class="col-md-10">
+								<p>Copyright © 2018 The Macro Group | LIMITED AFSL: 485843 | <a href="<?php echo get_home_url(); ?>/disclaimer">DISCLAIMER</a> | 
+								 <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy Policy</a> | 
+								 <a href="<?php echo get_home_url(); ?>/dispute-resolution">Dispute Resolution</a></p>
 						</div>
 						
-						<div class="col-sm-2 footer__logo-container">
+						<div class="col-md-2 footer__logo-container">
               <a class="footer__logo" href="<?php echo get_home_url(); ?>"><img class="footer__logo" src="<?php bloginfo('template_directory'); ?>/img/mg-icon.svg" alt="The Macro Group"></a>
 						</div>
 
@@ -40,7 +41,9 @@
 	if( !empty($location) ):
 	?>
 	<div class="acf-map">
-		<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+		<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>">
+		<p class="address"><?php echo $location['address']; ?></p>
+		</div>
 	</div>
 	<?php endif; ?>
   </div>
@@ -51,7 +54,7 @@
   <ul class="social-links">
   <?php while ( have_rows('social_links','options') ) : the_row(); ?>
 		<li>
-	<a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('icon'); ?></a>
+	<a href="<?php the_sub_field('link'); ?>" target="_blank"><?php the_sub_field('icon'); ?></a>
 	</li>
 	<?php endwhile; 
 		 ?>
@@ -84,6 +87,16 @@
   <?php while ( have_rows('locations','options') ) : the_row(); ?>
   <div class="col-6">
 	<p><?php the_sub_field('location'); ?></p>
+	</div>
+	<?php endwhile; ?>
+	</div>
+	<?php endif; ?>
+
+	<?php if( have_rows('buttons','options') ): ?>
+  <div class="row mt-4">
+  <?php while ( have_rows('buttons','options') ) : the_row(); ?>
+  <div class="col-6">
+  <a class="btn btn--block btn--outline" href="<?php the_sub_field('button_link'); ?>"><?php the_sub_field('button_text'); ?></a>
 	</div>
 	<?php endwhile; ?>
 	</div>

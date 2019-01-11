@@ -34,22 +34,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-	<span class="menu-toggle">Menu</span>
-	<span class="connect-toggle">Connect</span>
-		
-		<!-- <a href="<?php echo get_home_url(); ?>" id="site-logo" class="site-logo">
-			<img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/mg-logo.svg" alt="The Macro Group">
-		</a> -->
-	<a id="toggleMenu" class="toggle-menu">
-			<span class="line"></span>
-			<span class="line"></span>
-			<span class="line"></span>
-	</a>
-
+	<span class="menu-toggle d-none d-md-block">Menu</span>
+	<span class="connect-toggle d-none d-md-block">Connect</span>
+	
+	
 	
 		
-	</div><!-- #header -->
-
+</div><!-- #header -->
+	<a class="btn btn--block btn--solid  d-block d-md-none" href="tel:"><i class="fas fa-phone"></i> +61 7 3844 5555</a>
+<div class="mobile-header d-block d-md-none">
+	<a href="<?php echo get_home_url(); ?>" id="mobile-logo" class="mobile-logo">
+			<img class="mobile-logo" src="<?php bloginfo('template_directory'); ?>/img/mg-logo.svg" alt="The Macro Group">
+	</a>
+	<span class="menu-toggle"><i class="fal fa-bars"></i></span>
+	<span class="connect-toggle"><i class="fal fa-envelope"></i></span>
+</div>
 
 
 <div class="menu-container">

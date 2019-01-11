@@ -15,7 +15,6 @@
 // keep a max width in case it is just the form and nothing else
 // we do not want a form spanning whole page
 .wpcf7 {
-  max-width: 600px;
   margin: 0 auto !important;
 
   // all inputs except radios and checkboxes inherit from form-control
@@ -38,12 +37,18 @@
   select,
   textarea {
     @extend .form-control;
+    background-color: rgba($white,0.1);
+    border: 1px solid $white;
+    border-radius: 0;
+    color: $white;
   }
 
   // submit button, inherit .btn and .btn-outline-primary classes.
   input[type=submit] {
     @extend .btn;
-    @extend .btn-outline-primary;
+    @extend .btn--solid;
+    margin-top: 1rem;
+    border: 0;
   }
 
   .wpcf7-form {
@@ -56,12 +61,16 @@
     // let labels be 100%
     label {
       width: 100%;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
     }
   }
 
   // not valid tip for each control
   .wpcf7-not-valid-tip {
-    color: theme-color("danger");
+    color: theme-color("danger")!important;
   }
 
   // validation errors ourput bottom of form
@@ -69,6 +78,7 @@
     @extend .form-control;
     color: theme-color("danger");
     border: 1px solid $gray-200;
+    border-radius: 0;
   }
 }
 
@@ -78,4 +88,8 @@ select {
   background-size: 10px !important;
   background-repeat: no-repeat !important;
   padding-right: 10% !important;
+}
+
+div.wpcf7-response-output {
+  margin: 0 0 1rem;
 }

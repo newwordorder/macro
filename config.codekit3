@@ -858,6 +858,13 @@
 		"oAP": "/page-templates/blocks/client-logos.php",
 		"oF": 0
 		},
+	"/page-templates/blocks/contact.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/contact.php",
+		"oF": 0
+		},
 	"/page-templates/blocks/cta.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -870,6 +877,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/blocks/feature-columns.php",
+		"oF": 0
+		},
+	"/page-templates/blocks/feature-tile-text.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/feature-tile-text.php",
 		"oF": 0
 		},
 	"/page-templates/blocks/feature-tiles.php": {
@@ -893,32 +907,18 @@
 		"oAP": "/page-templates/blocks/line-break.php",
 		"oF": 0
 		},
-	"/page-templates/blocks/pre-footer-cta.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/page-templates/blocks/pre-footer-cta.php",
-		"oF": 0
-		},
-	"/page-templates/blocks/projects.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/page-templates/blocks/projects.php",
-		"oF": 0
-		},
-	"/page-templates/blocks/tabs.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/page-templates/blocks/tabs.php",
-		"oF": 0
-		},
 	"/page-templates/blocks/text-block.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/blocks/text-block.php",
+		"oF": 0
+		},
+	"/page-templates/blocks/text-columns.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/blocks/text-columns.php",
 		"oF": 0
 		},
 	"/page-templates/blocks/text-image.php": {

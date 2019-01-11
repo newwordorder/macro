@@ -21,7 +21,9 @@ $hidePageTitle = get_field('hide_page_title');
 ?>
 
 <section id="sub-header" class="page-header page-header--home bg-effect--ken-burns imagebg" data-overlay="<?php echo $imageOverlay ?>" >
-
+<a href="<?php echo get_home_url(); ?>" id="site-logo" class="site-logo">
+		<img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/mg-logo.svg" alt="The Macro Group">
+	</a>
   
 <?php 
 
@@ -46,7 +48,7 @@ if( $images ): ?>
 
   
 
-
+  
 </section>
 
 

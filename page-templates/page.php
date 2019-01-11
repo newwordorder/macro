@@ -26,7 +26,7 @@ $hidePageTitle = get_field('hide_page_title');
 
 ?>
 
-<section id="sub-header" class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>" data-overlay="<?php echo $imageOverlay ?>">
+<section id="sub-header" class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg bg--dark <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>" data-overlay="<?php echo $imageOverlay ?>">
 
 
   <?php if( !empty($image) ):
@@ -41,12 +41,10 @@ $hidePageTitle = get_field('hide_page_title');
     </div>
   <?php endif; ?>
 
-<div class="container-wide">
-  <div class="row justify-content-center">
-    <div class="col">
-        <h1 class=""><?php the_title(); ?></h1>
-    </div>
-  </div>
+  <a href="<?php echo get_home_url(); ?>" id="site-logo" class="site-logo">
+		<img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/mg-logo.svg" alt="The Macro Group">
+	</a>
+  <h1 class="title"><?php the_title(); ?></h1>
 </div>
 
 

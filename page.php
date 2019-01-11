@@ -16,29 +16,19 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div id="sub-header"></div>
+<section class="wrapper bg--dark my-5" id="page-wrapper">
 
-<div class="wrapper" id="page-wrapper">
+	<div class="container my-5" id="content" tabindex="-1">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-
-		<div class="row">
+		<div class="row justify-content-center">
 
 			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
-			<main class="site-main" id="main">
+			<main class="site-main col-md-8" id="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
-
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
+				<?php the_title( '<h1 class="my-5">', '</h1>' ); ?>
+				<?php the_content(); ?>
 
 				<?php endwhile; // end of the loop. ?>
 
@@ -47,11 +37,10 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		</div><!-- #primary -->
 
 		<!-- Do the right sidebar check -->
-		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 
 	</div><!-- .row -->
 
-</div><!-- Container end -->
+				</section><!-- Container end -->
 
 </div><!-- Wrapper end -->
 

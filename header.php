@@ -66,7 +66,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php wp_nav_menu(
 		array(
 			'theme_location'  => 'main-buttons',
-			'container_class' => 'main-menu__container',
+			'container_class' => '',
 			'container_id'    => '',
 			'menu_class'      => 'main-menu-buttons',
 			'fallback_cb'     => '',

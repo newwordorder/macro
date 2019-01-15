@@ -16707,7 +16707,7 @@ footer.footer-7 {
 
 .main-menu-buttons {
   position: absolute;
-  bottom: 4rem;
+  bottom: 2rem;
   right: 2rem;
   left: 2rem;
   margin: 0;
@@ -16738,6 +16738,13 @@ footer.footer-7 {
         color: #54AF32;
         border: 2px solid #54AF32;
         background-color: transparent; }
+  @media (max-width: 767.98px) {
+    .main-menu-buttons {
+      position: relative;
+      bottom: auto;
+      right: auto;
+      left: auto;
+      padding-top: 3rem; } }
 
 .mobile-pre-header {
   height: 80px;

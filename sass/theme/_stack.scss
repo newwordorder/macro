@@ -4713,7 +4713,7 @@ body.boxed-layout .modal-container section:not([class*='bg-']) {
   }
 
   100% {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 }
 
@@ -4723,7 +4723,7 @@ body.boxed-layout .modal-container section:not([class*='bg-']) {
   }
 
   100% {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 }
 
@@ -5442,8 +5442,8 @@ section.bg-effect--parallax .row .background-image-holder {
 
 .section--ken-burns>.background-image-holder,
 .section--ken-burns>img:only-child:not(.site-logo) {
-  animation: kenBurns 15s ease alternate infinite;
-  -webkit-animation: kenBurns 15s ease alternate infinite;
+  animation: kenBurns 1s ease alternate ;
+  -webkit-animation: kenBurns 1s ease alternate ;
 }
 
 /*! -- Stack Titles -- */

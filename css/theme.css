@@ -11649,16 +11649,16 @@ body.boxed-layout .modal-container section:not([class*='bg-']) {
     -webkit-transform: scale(1);
             transform: scale(1); }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); } }
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); } }
 
 @-webkit-keyframes kenBurns {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1); }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); } }
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); } }
 
 /*! -- Stack Sections
 section:not(.unpad):not(.imagebg):not([class*='bg--']):not(.imageblock):not(.unpad--bottom):not(.border--bottom):not(.space--xxs) + section:not(.unpad):not(.imagebg):not([class*='bg--']):not(.imageblock):not(.border--bottom):not(.space--xxs) {
@@ -12337,8 +12337,8 @@ section.bg-effect--parallax .row .background-image-holder {
 
 .section--ken-burns > .background-image-holder,
 .section--ken-burns > img:only-child:not(.site-logo) {
-  animation: kenBurns 15s ease alternate infinite;
-  -webkit-animation: kenBurns 15s ease alternate infinite; }
+  animation: kenBurns 1s ease alternate;
+  -webkit-animation: kenBurns 1s ease alternate; }
 
 /*! -- Stack Titles -- */
 .breadcrumbs {
@@ -16713,7 +16713,8 @@ footer.footer-7 {
   margin: 0;
   padding: 0;
   margin-top: 3rem;
-  display: block; }
+  display: block;
+  list-style: none; }
   .main-menu-buttons .menu-item {
     font-family: "Montserrat", sans-serif;
     font-size: 0.875rem;
@@ -16728,16 +16729,22 @@ footer.footer-7 {
       text-transform: uppercase;
       display: block;
       padding: 0.875rem;
-      color: #fff;
-      border: 2px solid #fff;
+      color: #54AF32;
+      border: 2px solid #54AF32;
       background-color: transparent;
-      -webkit-transform: 0.2s;
-              transform: 0.2s; }
+      transition: 0.2s; }
       .main-menu-buttons .menu-item a:hover {
         text-decoration: none;
-        color: #54AF32;
+        color: #fff;
         border: 2px solid #54AF32;
-        background-color: transparent; }
+        background-color: #54AF32; }
+  @media screen and (max-height: 700px) {
+    .main-menu-buttons {
+      position: relative;
+      bottom: auto;
+      right: auto;
+      left: auto;
+      padding-top: 3rem; } }
   @media (max-width: 767.98px) {
     .main-menu-buttons {
       position: relative;
@@ -17045,9 +17052,18 @@ section.space--xlg {
 section.bg-effect--ken-burns {
   overflow: hidden; }
   section.bg-effect--ken-burns .background-image-holder,
-  section.bg-effect--ken-burns img:only-child {
-    animation: kenBurns 15s ease alternate infinite;
-    -webkit-animation: kenBurns 15s ease alternate infinite; }
+  section.bg-effect--ken-burns img:only-child:not(.site-logo) {
+    animation: kenBurns 15s ease none 1;
+    -webkit-animation: kenBurns 15s ease none 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+
+.page-header--home .background-image-holder,
+.page-header--home img:only-child:not(.site-logo) {
+  animation: kenBurns 10.5s ease alternate infinite !important;
+  -webkit-animation: kenBurns 10.5s ease alternate infinite !important;
+  -webkit-animation-fill-mode: both !important;
+          animation-fill-mode: both !important; }
 
 .space-below--none {
   padding-bottom: 0; }

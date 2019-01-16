@@ -93,13 +93,11 @@
 	<?php endif; ?>
 
 	<?php if( have_rows('buttons','options') ): ?>
-  <div class="row mt-4">
+  <ul class="main-menu-buttons">
   <?php while ( have_rows('buttons','options') ) : the_row(); ?>
-  <div class="col-6">
-  <a class="btn btn--block btn--outline" href="<?php the_sub_field('button_link'); ?>"><?php the_sub_field('button_text'); ?></a>
-	</div>
+  <li class="menu-item"><a class="btn btn--block btn--outline" href="<?php the_sub_field('button_link'); ?>"><?php the_sub_field('button_text'); ?></a></li>
 	<?php endwhile; ?>
-	</div>
+	</ul>
 	<?php endif; ?>
 	 	 	 	 
 
@@ -131,7 +129,7 @@
   effect: 'fade',
   speed: 1000,
   autoplay: {
-    delay: 6000,
+	delay: 10000,
     disableOnInteraction: false,
   },
   loop: true,

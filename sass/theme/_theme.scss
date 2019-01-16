@@ -77,13 +77,22 @@ section {
       overflow: hidden;
 
       & .background-image-holder,
-      & img:only-child {
-        animation: kenBurns 15s ease alternate infinite;
-        -webkit-animation: kenBurns 15s ease alternate infinite;
+      & img:only-child:not(.site-logo) {
+        animation: kenBurns 15s ease none 1;
+        -webkit-animation: kenBurns 15s ease none 1;
+        animation-fill-mode: forwards;
       }
     }
   }
+}
 
+.page-header--home {
+  & .background-image-holder,
+      & img:only-child:not(.site-logo) {
+        animation: kenBurns 10.5s ease alternate infinite!important;
+        -webkit-animation: kenBurns 10.5s ease alternate infinite!important;
+        animation-fill-mode: both!important;
+      }
 }
 
 .space-below {

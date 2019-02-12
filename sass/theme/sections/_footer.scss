@@ -126,3 +126,32 @@
         }
     }
 }
+
+.connect__info-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: calc( 100% - 4rem );
+    @include media-breakpoint-down(sm) {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        display: block;
+        width: 100%;
+    }
+}
+
+.connect-buttons {
+    padding: 0;
+    list-style: none;
+    .menu-item {
+        width: 50%;
+        float: left;
+        padding: 0 0.25rem;
+        a {
+            padding: 0.875rem;
+        }
+        
+    }
+}

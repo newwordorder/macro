@@ -72,28 +72,30 @@ section {
 
   }
 
-  &.bg-effect {
-    &--ken-burns {
-      overflow: hidden;
-
-      & .background-image-holder,
-      & img:only-child:not(.site-logo) {
-        animation: kenBurns 15s ease none 1;
-        -webkit-animation: kenBurns 15s ease none 1;
-        animation-fill-mode: forwards;
-      }
-    }
-  }
+  
 }
 
-.page-header--home {
-  & .background-image-holder,
-      & img:only-child:not(.site-logo) {
-        animation: kenBurns 10.5s ease alternate infinite!important;
-        -webkit-animation: kenBurns 10.5s ease alternate infinite!important;
-        animation-fill-mode: both!important;
-      }
+section.bg-effect--ken-burns {
+  overflow: hidden; }
+  section.bg-effect--ken-burns .background-image-holder,
+  section.bg-effect--ken-burns img:only-child:not(.site-logo) {
+    animation: kenBurns 15s ease none 1;
+    -webkit-animation: kenBurns 15s ease none 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+
+.swiper-slide-active .background-image-holder,
+.swiper-slide-active img:only-child:not(.site-logo) {
+  animation: kenBurns 10s ease none 1 !important;
+  -webkit-animation: kenBurns 10s ease none 1 !important;
+  -webkit-animation-fill-mode: forwards !important;
+          animation-fill-mode: forwards !important; }
+.swiper-slide-prev .background-image-holder {
+	-webkit-transform: scale(1.15);
+            transform: scale(1.15);
 }
+
+
 
 .space-below {
 
@@ -270,8 +272,9 @@ section {
 
   &--home {
     padding: 200px 0 150px;
-    height: 80vh;
+    height: 100vh;
     position: relative;
+    overflow: hidden;
   }
 
   &--page {

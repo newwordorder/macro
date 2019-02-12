@@ -48,6 +48,7 @@
 	<?php endif; ?>
   </div>
   <div class="connect__info">
+		<div class="connect__info-inner">
 
   <?php if( have_rows('social_links','options') ): ?>
   <h6>Social</h6>
@@ -63,7 +64,7 @@
 
 
   <?php if( have_rows('call','options') ): ?>
-  <h6>Call</h6>
+  <h6 class="mt-5">Call</h6>
   <?php while ( have_rows('call','options') ) : the_row(); ?>
 
 	<p><?php the_sub_field('number'); ?></p>
@@ -73,7 +74,7 @@
 		endif; ?>
 
   <?php if( have_rows('email','options') ): ?>
-  <h6>Email</h6>
+  <h6 class="mt-5">Email</h6>
   <?php while ( have_rows('email','options') ) : the_row(); ?>
 
 	<p class="mb-3"><a href="mailto:<?php the_sub_field('email_address'); ?>"><?php the_sub_field('email_address'); ?></a></p>
@@ -82,7 +83,7 @@
 		else :
 		endif; ?>
 	<?php if( have_rows('locations','options') ): ?>
-  <h6>Locations</h6>
+  <h6 class="mt-5">Locations</h6>
   <div class="row">
   <?php while ( have_rows('locations','options') ) : the_row(); ?>
   <div class="col-6">
@@ -93,14 +94,14 @@
 	<?php endif; ?>
 
 	<?php if( have_rows('buttons','options') ): ?>
-  <ul class="main-menu-buttons">
+  <ul class="mt-5 pt-5 connect-buttons">
   <?php while ( have_rows('buttons','options') ) : the_row(); ?>
   <li class="menu-item"><a class="btn btn--block btn--outline" href="<?php the_sub_field('button_link'); ?>"><?php the_sub_field('button_text'); ?></a></li>
 	<?php endwhile; ?>
 	</ul>
 	<?php endif; ?>
 	 	 	 	 
-
+	</div>
   </div>
 </div>
 

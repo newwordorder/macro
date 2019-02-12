@@ -16636,9 +16636,9 @@ footer.footer-7 {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg); }
 
-.site-logo {
+.page-header--home .site-logo {
   position: absolute;
-  width: 100px;
+  width: 300px;
   z-index: 1020; }
 
 .menu-container {
@@ -16712,7 +16712,7 @@ footer.footer-7 {
   left: 2rem;
   margin: 0;
   padding: 0;
-  margin-top: 3rem;
+  margin-top: 6rem;
   display: block;
   list-style: none; }
   .main-menu-buttons .menu-item {
@@ -16886,6 +16886,32 @@ footer.footer-7 {
     .social-links a:hover {
       color: #54AF32; }
 
+.connect__info-inner {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  width: calc( 100% - 4rem); }
+  @media (max-width: 767.98px) {
+    .connect__info-inner {
+      position: relative;
+      top: 0;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      display: block;
+      width: 100%; } }
+
+.connect-buttons {
+  padding: 0;
+  list-style: none; }
+  .connect-buttons .menu-item {
+    width: 50%;
+    float: left;
+    padding: 0 0.25rem; }
+    .connect-buttons .menu-item a {
+      padding: 0.875rem; }
+
 .feature-column {
   margin: 6px 0; }
   .feature-column--boxed {
@@ -16943,7 +16969,7 @@ footer.footer-7 {
     display: inline-block;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1rem; }
+    font-size: 1.25rem; }
   .feature-tile:hover .background-image-holder {
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
@@ -17051,19 +17077,24 @@ section.space--xlg {
 
 section.bg-effect--ken-burns {
   overflow: hidden; }
-  section.bg-effect--ken-burns .background-image-holder,
-  section.bg-effect--ken-burns img:only-child:not(.site-logo) {
-    animation: kenBurns 15s ease none 1;
-    -webkit-animation: kenBurns 15s ease none 1;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards; }
 
-.page-header--home .background-image-holder,
-.page-header--home img:only-child:not(.site-logo) {
-  animation: kenBurns 10.5s ease alternate infinite !important;
-  -webkit-animation: kenBurns 10.5s ease alternate infinite !important;
-  -webkit-animation-fill-mode: both !important;
-          animation-fill-mode: both !important; }
+section.bg-effect--ken-burns .background-image-holder,
+section.bg-effect--ken-burns img:only-child:not(.site-logo) {
+  animation: kenBurns 15s ease none 1;
+  -webkit-animation: kenBurns 15s ease none 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.swiper-slide-active .background-image-holder,
+.swiper-slide-active img:only-child:not(.site-logo) {
+  animation: kenBurns 10s ease none 1 !important;
+  -webkit-animation: kenBurns 10s ease none 1 !important;
+  -webkit-animation-fill-mode: forwards !important;
+  animation-fill-mode: forwards !important; }
+
+.swiper-slide-prev .background-image-holder {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15); }
 
 .space-below--none {
   padding-bottom: 0; }
@@ -17173,8 +17204,9 @@ section.bg-effect--ken-burns {
   background-color: #f8f9fa; }
   .page-header--home {
     padding: 200px 0 150px;
-    height: 80vh;
-    position: relative; }
+    height: 100vh;
+    position: relative;
+    overflow: hidden; }
   .page-header--page {
     padding: 200px 0 100px;
     height: 50vh;

@@ -60,7 +60,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	
 		
 </div><!-- #header -->
-	<a class="btn btn--block btn--solid  d-block d-md-none" href="tel:"><i class="fas fa-phone"></i> +61 7 3844 5555</a>
+	<a class="btn btn--block btn--solid  d-block d-md-none" href="tel:+61738445555"><i class="fas fa-phone"></i> +61 7 3844 5555</a>
 <div class="mobile-header d-block d-md-none">
 	<a href="<?php echo get_home_url(); ?>" id="mobile-logo" class="mobile-logo">
 			<img class="mobile-logo" src="<?php bloginfo('template_directory'); ?>/img/mg-logo.svg" alt="The Macro Group">

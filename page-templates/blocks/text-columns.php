@@ -4,7 +4,7 @@ if( get_row_layout() == 'text_columns' ):
 
   $narrowColumn = get_sub_field('narrow_column');
   $wideColumn = get_sub_field('wide_column');
-  $spaceBelow = get_sub_field('text_block_space_below');
+  $spaceBelow = get_sub_field('space_below');
 
   ?>
 

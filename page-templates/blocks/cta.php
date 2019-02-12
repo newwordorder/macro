@@ -5,7 +5,7 @@ if( get_row_layout() == 'cta' ):
 $layout = get_sub_field('layout');
 $text = get_sub_field('text_block');
 
-$spaceBelow = get_sub_field('text_image_space_below');
+$spaceBelow = get_sub_field('space_below');
 
 
 ?>

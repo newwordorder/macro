@@ -10526,7 +10526,7 @@ a {
 .bg--dark:not(.nav-bar):not(.bar) p {
   color: #ffffff; }
 
-.bg--dark:not(.nav-bar):not(.bar) a:not(.btn), .bg--dark:not(.nav-bar):not(.bar) a:not(.social-link) {
+.bg--dark:not(.nav-bar):not(.bar), .bg--dark:not(.nav-bar):not(.bar) {
   color: #fff; }
 
 .bg--site {
@@ -17112,8 +17112,7 @@ section.bg-effect--ken-burns img:only-child:not(.site-logo) {
   padding-bottom: 200px; }
 
 .flippable {
-  display: flex;
-  align-items: center; }
+  display: flex; }
   .flippable__text {
     order: 1; }
   .flippable__image {

@@ -12,7 +12,7 @@ if( get_row_layout() == 'feature_tiles' ):
   <?php if( have_rows('feature_tiles_column') ): ?>
   <div class="feature-tiles">
     <div class="container-fluid space-below--<?php echo $spaceBelow ?>">
-      <div class="row justify-content-center">
+      <div class="row">
         <?php while( have_rows('feature_tiles_column') ): the_row();
 
           $text = get_sub_field('text');
